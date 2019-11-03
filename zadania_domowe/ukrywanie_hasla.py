@@ -16,4 +16,13 @@ def hide_password(password):
     :return: napis z czesciowo ukrytym haslem.
 
     """
-    pass
+    new_password = ''
+    for i in range(len(password)):
+        if i % 3 == 2:
+            new_password += '*'
+        else:
+            new_password += password[i]
+    return new_password
+
+
+
