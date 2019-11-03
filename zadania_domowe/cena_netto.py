@@ -22,4 +22,12 @@ def calculate_netto_prize(grocery_list):
     :return: sume wszystkich wartosci netto z listy (jako liczba).
 
     """
-    pass
+    sum_net_price = 0
+    for val in grocery_list.values():
+        net_price = val[0] - (val[0] * (val[1] / 100))
+        sum_net_price += net_price
+    return sum_net_price
+
+
+
+
