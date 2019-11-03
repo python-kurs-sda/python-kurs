@@ -24,4 +24,8 @@ def count_even_numbers(numbers):
         zwracanej to int.
 
     """
-    pass
+    counter = 0
+    for i in numbers:
+        if i % 2 == 0:
+            counter += 1
+    return counter
