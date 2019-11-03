@@ -23,4 +23,21 @@ def merge_strings(string1, string2):
     :return: napis zlozony z podanych jako argumenty.
 
     """
-    pass
+    if len(string1) > len(string2):
+        end = len(string2)
+        slice_word = string1[end:]
+    else:
+        end = len(string1)
+        slice_word = string2[end:]
+    new_word = ''
+    for i in range(end):
+        new_word += string1[i]
+        new_word += string2[i]
+    return new_word + slice_word
+
+
+if __name__ == '__main__':
+
+    string1 = 'stop'
+    string2 = 'supermarket'
+    print(merge_strings(string1, string2))
