@@ -18,6 +18,8 @@
     >> determine_the_winner("4", "4")
     0
 """
+CARD_RANK = {'1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9,
+             '10': 10, 'J': 11, 'D': 12, 'K': 13, 'A': 14}
 
 
 def determine_the_winner(card1, card2):
@@ -28,4 +30,19 @@ def determine_the_winner(card1, card2):
     :return: 0 dla remisu, 1 jesli zwyciezy gracz 1, 2 dla zwyciestwa gracza 2.
 
     """
-    pass
+    upper_card_1 = card1.upper()
+    upper_card_2 = card2.upper()
+
+    if CARD_RANK[upper_card_1] > CARD_RANK[upper_card_2]:
+        return 1
+    elif CARD_RANK[upper_card_1] < CARD_RANK[upper_card_2]:
+        return 2
+    else:
+        return 0
+
+
+if __name__ == '__main__':
+    card_1 = '10'
+    card_2 = 'J'
+
+    print(determine_the_winner(card_1, card_2))
