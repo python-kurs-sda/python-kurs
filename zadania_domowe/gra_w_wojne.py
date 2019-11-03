@@ -32,13 +32,11 @@ def determine_the_winner(card1, card2):
     """
     upper_card_1 = card1.upper()
     upper_card_2 = card2.upper()
-
+    winner = ''
     if CARD_RANK[upper_card_1] > CARD_RANK[upper_card_2]:
-        return 1
+        winner = 1
     elif CARD_RANK[upper_card_1] < CARD_RANK[upper_card_2]:
-        return 2
+        winner = 2
     else:
-        return 0
-
-
-
+        winner = 0
+    return winner

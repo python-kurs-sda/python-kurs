@@ -17,11 +17,10 @@ def is_prime_number(number):
 
     """
     is_prime = True
-    if number == 1 or number == 0:
+    if number in range(0, 2):
         is_prime = False
     else:
         for i in range(2, number - 1):
             if number % i == 0:
                 is_prime = False
     return is_prime
-

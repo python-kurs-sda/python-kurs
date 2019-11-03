@@ -34,5 +34,3 @@ def merge_strings(string1, string2):
         new_word += string1[i]
         new_word += string2[i]
     return new_word + slice_word
-
-

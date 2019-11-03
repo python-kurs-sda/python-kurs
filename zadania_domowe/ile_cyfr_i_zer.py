@@ -41,7 +41,3 @@ def count_zeros(number):
         if i == '0':
             counter_zero += 1
     return counter_zero
-
-
-
-

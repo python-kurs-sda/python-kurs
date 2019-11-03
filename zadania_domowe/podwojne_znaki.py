@@ -19,6 +19,3 @@ def produce_double_signs(string):
     for i in string:
         double_string += i * 2
     return double_string
-
-
-
