@@ -24,4 +24,5 @@ def find_common_numbers(set1, set2):
         zbioru set1 jak i zbioru set2.
 
     """
-    pass
+    common_set = {i for i in set1 for y in set2 if i == y}
+    return common_set
