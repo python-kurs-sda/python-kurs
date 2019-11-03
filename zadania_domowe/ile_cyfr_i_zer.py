@@ -24,7 +24,10 @@ def count_digits(number):
     :return: ilosc cyfr w liczbie (int).
 
     """
-    pass
+    counter = 0
+    for i in str(number):
+        counter += 1
+    return counter
 
 
 def count_zeros(number):
@@ -33,4 +36,12 @@ def count_zeros(number):
     :param number: pewna liczba calkowita
     :return:
     """
-    pass
+    counter_zero = 0
+    for i in str(number):
+        if i == '0':
+            counter_zero += 1
+    return counter_zero
+
+
+
+
