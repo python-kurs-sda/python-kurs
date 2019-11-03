@@ -36,8 +36,3 @@ def merge_strings(string1, string2):
     return new_word + slice_word
 
 
-if __name__ == '__main__':
-
-    string1 = 'stop'
-    string2 = 'supermarket'
-    print(merge_strings(string1, string2))

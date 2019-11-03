@@ -41,8 +41,4 @@ def determine_the_winner(card1, card2):
         return 0
 
 
-if __name__ == '__main__':
-    card_1 = '10'
-    card_2 = 'J'
 
-    print(determine_the_winner(card_1, card_2))
